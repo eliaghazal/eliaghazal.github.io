@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>styles.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #d5b778;}
+.s3 { color: #bcbec4;}
+.s4 { color: #bababa;}
+.s5 { color: #bcbec4;}
+.s6 { color: #2aacb8;}
+.s7 { color: #6aab73;}
+.s8 { color: #56a8f5;}
+.s9 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+styles.css</font>
+</center></td></tr></table>
+<pre><span class="s0">/* Reset and Global Styles */</span>
+<span class="s2">* </span><span class="s3">{</span>
+    <span class="s4">margin</span><span class="s5">: </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">box-sizing</span><span class="s5">: </span><span class="s7">border-box</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">html </span><span class="s3">{</span>
+    <span class="s4">scroll-behavior</span><span class="s5">: </span><span class="s7">smooth</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">body </span><span class="s3">{</span>
+    <span class="s4">font-family</span><span class="s5">: </span><span class="s7">'Montserrat'</span><span class="s3">, </span><span class="s7">sans-serif</span><span class="s3">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s8">#333</span><span class="s3">;</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s8">#fff</span><span class="s3">;</span>
+    <span class="s4">line-height</span><span class="s5">: </span><span class="s6">1.6</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Container for consistent width */</span>
+<span class="s3">.</span><span class="s2">container </span><span class="s3">{</span>
+    <span class="s4">max-width</span><span class="s5">: </span><span class="s6">1200</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">margin</span><span class="s5">: </span><span class="s6">0 </span><span class="s7">auto</span><span class="s3">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">0 20</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Navigation Bar */</span>
+<span class="s3">.</span><span class="s2">navbar </span><span class="s3">{</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s7">fixed</span><span class="s3">;</span>
+    <span class="s4">width</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s8">#fff</span><span class="s3">;</span>
+    <span class="s4">border-bottom</span><span class="s5">: </span><span class="s6">1</span><span class="s7">px solid </span><span class="s8">#ddd</span><span class="s3">;</span>
+    <span class="s4">z-index</span><span class="s5">: </span><span class="s6">1000</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">nav-container </span><span class="s3">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">flex</span><span class="s3">;</span>
+    <span class="s4">justify-content</span><span class="s5">: </span><span class="s7">space-between</span><span class="s3">;</span>
+    <span class="s4">align-items</span><span class="s5">: </span><span class="s7">center</span><span class="s3">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">10</span><span class="s7">px </span><span class="s6">0</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">logo h1 </span><span class="s3">{</span>
+    <span class="s4">font-weight</span><span class="s5">: </span><span class="s6">600</span><span class="s3">;</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">1.5</span><span class="s7">rem</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">nav-list </span><span class="s3">{</span>
+    <span class="s4">list-style</span><span class="s5">: </span><span class="s7">none</span><span class="s3">;</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">flex</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">nav-list li </span><span class="s3">{</span>
+    <span class="s4">margin-left</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">nav-list li a </span><span class="s3">{</span>
+    <span class="s4">text-decoration</span><span class="s5">: </span><span class="s7">none</span><span class="s3">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s8">#333</span><span class="s3">;</span>
+    <span class="s4">font-weight</span><span class="s5">: </span><span class="s6">500</span><span class="s3">;</span>
+    <span class="s4">transition</span><span class="s5">: </span><span class="s7">color </span><span class="s6">0.3</span><span class="s7">s</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">nav-list li a</span><span class="s5">:</span><span class="s2">hover </span><span class="s3">{</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s8">#007acc</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Section Base */</span>
+<span class="s3">.</span><span class="s2">section </span><span class="s3">{</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">100</span><span class="s7">px </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">min-height</span><span class="s5">: </span><span class="s6">100</span><span class="s7">vh</span><span class="s3">;</span>
+    <span class="s4">text-align</span><span class="s5">: </span><span class="s7">center</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">section h2 </span><span class="s3">{</span>
+    <span class="s4">margin-bottom</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">2</span><span class="s7">rem</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Home Section with Video Background */</span>
+<span class="s3">.</span><span class="s2">video-container </span><span class="s3">{</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s7">relative</span><span class="s3">;</span>
+    <span class="s4">height</span><span class="s5">: </span><span class="s6">100</span><span class="s7">vh</span><span class="s3">;</span>
+    <span class="s4">overflow</span><span class="s5">: </span><span class="s7">hidden</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">video-container video </span><span class="s3">{</span>
+    <span class="s4">width</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">height</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">object-fit</span><span class="s5">: </span><span class="s7">cover</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">video-container </span><span class="s3">.</span><span class="s2">overlay </span><span class="s3">{</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s7">absolute</span><span class="s3">;</span>
+    <span class="s4">top</span><span class="s5">: </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">left</span><span class="s5">: </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">width</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">height</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s2">rgba</span><span class="s3">(</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0.4</span><span class="s3">);</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">flex</span><span class="s3">;</span>
+    <span class="s4">flex-direction</span><span class="s5">: </span><span class="s7">column</span><span class="s3">;</span>
+    <span class="s4">justify-content</span><span class="s5">: </span><span class="s7">center</span><span class="s3">;</span>
+    <span class="s4">align-items</span><span class="s5">: </span><span class="s7">center</span><span class="s3">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s8">#fff</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">video-container </span><span class="s3">.</span><span class="s2">overlay h1 </span><span class="s3">{</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">3</span><span class="s7">rem</span><span class="s3">;</span>
+    <span class="s4">margin-bottom</span><span class="s5">: </span><span class="s6">10</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">video-container </span><span class="s3">.</span><span class="s2">overlay p </span><span class="s3">{</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">1.2</span><span class="s7">rem</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Grid Layout for Cards and Galleries */</span>
+<span class="s3">.</span><span class="s2">grid </span><span class="s3">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">grid</span><span class="s3">;</span>
+    <span class="s4">gap</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">grid-template-columns</span><span class="s5">: </span><span class="s2">repeat</span><span class="s3">(</span><span class="s7">auto-fit</span><span class="s3">, </span><span class="s2">minmax</span><span class="s3">(</span><span class="s6">250</span><span class="s7">px</span><span class="s3">, </span><span class="s6">1</span><span class="s7">fr</span><span class="s3">));</span>
+    <span class="s4">margin-top</span><span class="s5">: </span><span class="s6">40</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Card &amp; Gallery Item Styles */</span>
+<span class="s3">.</span><span class="s2">card</span><span class="s3">, .</span><span class="s2">gallery-item </span><span class="s3">{</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s8">#f9f9f9</span><span class="s3">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">15</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">border-radius</span><span class="s5">: </span><span class="s6">5</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">transition</span><span class="s5">: </span><span class="s2">transform </span><span class="s6">0.3</span><span class="s7">s</span><span class="s3">, </span><span class="s2">box-shadow </span><span class="s6">0.3</span><span class="s7">s</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">card</span><span class="s5">:</span><span class="s2">hover</span><span class="s3">, .</span><span class="s2">gallery-item</span><span class="s5">:</span><span class="s2">hover </span><span class="s3">{</span>
+    <span class="s4">transform</span><span class="s5">: </span><span class="s2">translateY</span><span class="s3">(-</span><span class="s6">5</span><span class="s7">px</span><span class="s3">);</span>
+    <span class="s4">box-shadow</span><span class="s5">: </span><span class="s6">0 10</span><span class="s7">px </span><span class="s6">15</span><span class="s7">px </span><span class="s2">rgba</span><span class="s3">(</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0.1</span><span class="s3">);</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">card img</span><span class="s3">, .</span><span class="s2">gallery-item img </span><span class="s3">{</span>
+    <span class="s4">width</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">border-radius</span><span class="s5">: </span><span class="s6">5</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">card h3 </span><span class="s3">{</span>
+    <span class="s4">margin</span><span class="s5">: </span><span class="s6">15</span><span class="s7">px </span><span class="s6">0 10</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">card p </span><span class="s3">{</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">0.9</span><span class="s7">rem</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Blog Grid Specific */</span>
+<span class="s3">.</span><span class="s2">blog-grid </span><span class="s3">.</span><span class="s2">card </span><span class="s3">{</span>
+    <span class="s4">text-align</span><span class="s5">: </span><span class="s7">left</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Contact Form Styles */</span>
+<span class="s2">form </span><span class="s3">{</span>
+    <span class="s4">max-width</span><span class="s5">: </span><span class="s6">600</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">margin</span><span class="s5">: </span><span class="s6">0 </span><span class="s7">auto</span><span class="s3">;</span>
+    <span class="s4">text-align</span><span class="s5">: </span><span class="s7">left</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">form-group </span><span class="s3">{</span>
+    <span class="s4">margin-bottom</span><span class="s5">: </span><span class="s6">15</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">form-group label </span><span class="s3">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">block</span><span class="s3">;</span>
+    <span class="s4">margin-bottom</span><span class="s5">: </span><span class="s6">5</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">form-group input</span><span class="s3">,</span>
+<span class="s3">.</span><span class="s2">form-group textarea </span><span class="s3">{</span>
+    <span class="s4">width</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">10</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">border</span><span class="s5">: </span><span class="s6">1</span><span class="s7">px solid </span><span class="s8">#ddd</span><span class="s3">;</span>
+    <span class="s4">border-radius</span><span class="s5">: </span><span class="s6">3</span><span class="s7">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">button</span><span class="s3">[</span><span class="s2">type</span><span class="s3">=</span><span class="s7">&quot;submit&quot;</span><span class="s3">] {</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">inline-block</span><span class="s3">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">10</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s8">#007acc</span><span class="s3">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s8">#fff</span><span class="s3">;</span>
+    <span class="s4">border</span><span class="s5">: </span><span class="s7">none</span><span class="s3">;</span>
+    <span class="s4">border-radius</span><span class="s5">: </span><span class="s6">3</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">cursor</span><span class="s5">: </span><span class="s7">pointer</span><span class="s3">;</span>
+    <span class="s4">transition</span><span class="s5">: </span><span class="s7">background </span><span class="s6">0.3</span><span class="s7">s</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">button</span><span class="s3">[</span><span class="s2">type</span><span class="s3">=</span><span class="s7">&quot;submit&quot;</span><span class="s3">]</span><span class="s5">:</span><span class="s2">hover </span><span class="s3">{</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s8">#005fa3</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Resume Section */</span>
+<span class="s3">.</span><span class="s2">resume-content </span><span class="s3">{</span>
+    <span class="s4">margin-top</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">text-align</span><span class="s5">: </span><span class="s7">left</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Lightbox Modal Styles */</span>
+<span class="s3">.</span><span class="s2">lightbox-modal </span><span class="s3">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">none</span><span class="s3">;</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s7">fixed</span><span class="s3">;</span>
+    <span class="s4">z-index</span><span class="s5">: </span><span class="s6">2000</span><span class="s3">;</span>
+    <span class="s4">left</span><span class="s5">: </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">top</span><span class="s5">: </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">width</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">height</span><span class="s5">: </span><span class="s6">100</span><span class="s3">%;</span>
+    <span class="s4">overflow</span><span class="s5">: </span><span class="s7">auto</span><span class="s3">;</span>
+    <span class="s4">background-color</span><span class="s5">: </span><span class="s2">rgba</span><span class="s3">(</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0</span><span class="s3">,</span><span class="s6">0.9</span><span class="s3">);</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">lightbox-content </span><span class="s3">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s7">block</span><span class="s3">;</span>
+    <span class="s4">margin</span><span class="s5">: </span><span class="s6">5</span><span class="s3">% </span><span class="s7">auto</span><span class="s3">;</span>
+    <span class="s4">max-width</span><span class="s5">: </span><span class="s6">90</span><span class="s3">%;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s2">lightbox-modal </span><span class="s3">.</span><span class="s2">close </span><span class="s3">{</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s7">absolute</span><span class="s3">;</span>
+    <span class="s4">top</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">right</span><span class="s5">: </span><span class="s6">35</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s8">#fff</span><span class="s3">;</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">40</span><span class="s7">px</span><span class="s3">;</span>
+    <span class="s4">font-weight</span><span class="s5">: </span><span class="s7">bold</span><span class="s3">;</span>
+    <span class="s4">cursor</span><span class="s5">: </span><span class="s7">pointer</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Footer */</span>
+<span class="s2">footer </span><span class="s3">{</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s8">#f5f5f5</span><span class="s3">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s4">border-top</span><span class="s5">: </span><span class="s6">1</span><span class="s7">px solid </span><span class="s8">#ddd</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">footer p </span><span class="s3">{</span>
+    <span class="s4">font-size</span><span class="s5">: </span><span class="s6">0.9</span><span class="s7">rem</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* Responsive Adjustments */</span>
+<span class="s9">@media </span><span class="s3">(</span><span class="s4">max-width</span><span class="s5">: </span><span class="s6">768</span><span class="s7">px</span><span class="s3">) {</span>
+    <span class="s3">.</span><span class="s2">nav-list </span><span class="s3">{</span>
+        <span class="s4">flex-direction</span><span class="s5">: </span><span class="s7">column</span><span class="s3">;</span>
+        <span class="s4">background</span><span class="s5">: </span><span class="s8">#fff</span><span class="s3">;</span>
+        <span class="s4">position</span><span class="s5">: </span><span class="s7">absolute</span><span class="s3">;</span>
+        <span class="s4">top</span><span class="s5">: </span><span class="s6">60</span><span class="s7">px</span><span class="s3">;</span>
+        <span class="s4">right</span><span class="s5">: </span><span class="s6">20</span><span class="s7">px</span><span class="s3">;</span>
+        <span class="s4">display</span><span class="s5">: </span><span class="s7">none</span><span class="s3">;</span>
+        <span class="s4">width</span><span class="s5">: </span><span class="s6">200</span><span class="s7">px</span><span class="s3">;</span>
+        <span class="s4">border</span><span class="s5">: </span><span class="s6">1</span><span class="s7">px solid </span><span class="s8">#ddd</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s3">.</span><span class="s2">nav-list li </span><span class="s3">{</span>
+        <span class="s4">margin</span><span class="s5">: </span><span class="s6">10</span><span class="s7">px </span><span class="s6">0</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s0">/* Optional: Add a mobile menu toggle if desired */</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>
